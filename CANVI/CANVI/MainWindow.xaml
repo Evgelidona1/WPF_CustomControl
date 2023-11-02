@@ -1,0 +1,19 @@
+﻿<Window x:Class="CANVI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CANVI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="canvas" Background="AliceBlue"
+       PreviewMouseMove="canvas_MouseMove"
+       PreviewMouseDown="canvas_MouseDown" 
+       PreviewMouseUp="canvas_MouseUp" MouseDown="canvas_MouseDown" MouseUp="canvas_MouseUp" MouseMove="canvas_MouseMove" Margin="0,60,0,0">
+        </Canvas>
+        <Button x:Name="first" Content="1" HorizontalAlignment="Left" Margin="187,15,0,0" VerticalAlignment="Top" Click="first_Click" Width="60"/>
+        <Button x:Name="second" Content="2" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Click="second_Click" Width="60"/>
+        <Button x:Name="third" Content="3" HorizontalAlignment="Left" Margin="565,15,0,0" VerticalAlignment="Top" Click="third_Click" Width="60"/>
+    </Grid>
+</Window>
